@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+    .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+    .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; text-align: center; border-radius: 10px 10px 0 0; }
+    .content { background: #f9f9f9; padding: 30px; border-radius: 0 0 10px 10px; }
+    .button { display: inline-block; background: #667eea; color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; margin-top: 20px; }
+    .footer { text-align: center; margin-top: 20px; color: #888; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🚗 Welcome to Car Rental!</h1>
+    </div>
+    <div class="content">
+      <h2>Hello {{name}},</h2>
+      <p>Thank you for joining Car Rental! We're excited to have you on board.</p>
+      <p>Your account has been created successfully with the email: <strong>{{email}}</strong></p>
+      <p>You can now browse our wide selection of vehicles and make reservations at your convenience.</p>
+      <a href="{{loginUrl}}" class="button">Start Exploring</a>
+      <p style="margin-top: 30px;">If you have any questions, feel free to contact our support team.</p>
+      <p>Best regards,<br>The Car Rental Team</p>
+    </div>
+    <div class="footer">
+      <p>© 2024 Car Rental. All rights reserved.</p>
+    </div>
+  </div>
+</body>
+</html>

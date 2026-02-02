@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+    .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+    .header { background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); color: white; padding: 30px; text-align: center; border-radius: 10px 10px 0 0; }
+    .content { background: #f9f9f9; padding: 30px; border-radius: 0 0 10px 10px; }
+    .details { background: white; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #11998e; }
+    .details p { margin: 8px 0; }
+    .button { display: inline-block; background: #11998e; color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; margin-top: 20px; }
+    .footer { text-align: center; margin-top: 20px; color: #888; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>✅ Reservation Approved!</h1>
+    </div>
+    <div class="content">
+      <h2>Great news, {{name}}!</h2>
+      <p>Your reservation has been approved. Here are the details:</p>
+      <div class="details">
+        <p><strong>🚗 Vehicle:</strong> {{carName}}</p>
+        <p><strong>📅 Pickup Date:</strong> {{pickupDate}}</p>
+        <p><strong>📅 Return Date:</strong> {{returnDate}}</p>
+        <p><strong>💰 Total Price:</strong> {{totalPrice}} DH</p>
+      </div>
+      <p>Please arrive on time at our office to pick up your vehicle. Don't forget to bring:</p>
+      <ul>
+        <li>Valid ID (CIN)</li>
+        <li>Driving license</li>
+        <li>Payment method</li>
+      </ul>
+      <a href="{{reservationUrl}}" class="button">View Reservation</a>
+      <p style="margin-top: 30px;">See you soon!</p>
+      <p>Best regards,<br>The Car Rental Team</p>
+    </div>
+    <div class="footer">
+      <p>© 2024 Car Rental. All rights reserved.</p>
+    </div>
+  </div>
+</body>
+</html>
